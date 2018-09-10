@@ -21,7 +21,7 @@ namespace Implementation.Search
         public static int BinarySearchIterative(int[] a, int value) {
             int left = 0;
             int right = a.Length - 1;
-            while (left < right) {
+            while (left <= right) {
                 int mid = left + (right - left) / 2;
 
                 if (a[mid].Equals(value))
